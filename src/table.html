@@ -2,16 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>표(table)</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        th, td{
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+        th{
+            background-color: cadetblue;;
+        }
+    </style>
 </head>
 <body>
+    <title>표만들기</title>
     <table>
-        <tr>
-            <th>번호</th>
-            <th>상품명</th>
-            <th>수량</th>
-            <th>가격</th>
-        </tr>
+        <thead>
+            <tr>
+                <th>번호</th>
+                <th>상품명</th>
+                <th>수량</th>
+                <th>가격</th>
+            </tr>
+        </thead>
         <tr>
             <td>1</td>
             <td>콜라</td>
@@ -22,13 +37,16 @@
             <td>2</td>
             <td>사이다</td>
             <td>2개</td>
-            <td>2,000원</td>
+            <td rowspan="2">2,000원</td>
         </tr>
         <tr>
             <td>3</td>
             <td>탄산수</td>
             <td>3개</td>
-            <td>2,500</td>
+        </tr>
+        <tr>
+            <td>총 금액</td>
+            <td colspan="3">5,500원</td>
         </tr>
     </table>
 </body>
