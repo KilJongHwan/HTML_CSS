@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프론트엔드 개발자 지원서 양식</title>
+    <style>
+        .form-container {
+            width: 520px;
+            border: 1px solid black;
+            padding: 10px 20px;
+            margin: 0;
+        }
+        .form-item{
+            margin: 30px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset class="form-container">
+        <div class="form-item">
+            <H2>프론트엔드 개발자 지원서</H2>
+            HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.
+            <hr>
+            <br>
+            <b>개인정보</b>
+            <div class="form-item">
+                <form action="#">
+                    <label for="name">이름</label>
+                    <input type="text" id="name" placeholder="공백없이 입력하세요">
+                    <br>
+                    <label for="phone">연락처</label>
+                    <input type="tel" id="phone">
+                </form>
+            </div>
+            <b>지원 분야</b>
+            <div class="form-item">
+                <form action="#">
+                    <input type="radio" value="web" id="web" name="field">
+                    <label for="web">웹퍼블리싱</label>
+                    <br>
+                    <input type="radio" value="front" id="front" name="field">
+                    <label for="front">프론트엔드</label>
+                    <br>
+                    <input type="radio" value="mobile" id="mobile" name="field">
+                    <label for="mobile">모바일 앱</label>
+                </form>
+            </div>
+            <b>지원 동기</b>
+            <br><br>
+            <textarea cols="80" rows="5"></textarea>
+            <form action="#">
+                <input type="submit" value="접수하기">
+                <input type="reset" value="다시쓰기">
+            </form>
+        </div>
+       
+    </fieldset>
+    
+</body>
+</html>

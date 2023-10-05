@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이패드 주문하기</title>
+    <style>
+    form div {
+        margin-bottom: 10px;
+    }
+    
+    label {
+        display: inline-block;
+        width: 150px; 
+        font-weight: bold; 
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        width: 300px; 
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+    
+    input[type="tel"]::placeholder {
+        color: #999; 
+    }
+    .button-container {
+        display: flex;
+        justify-content: center; 
+        margin-top: 20px;
+    }
+
+    .button-spacing {
+        width: 20px; 
+    }
+    span{
+        font-size: 80%;
+    }
+    
+    </style>
+</head>
+<body>
+    <h2>아이패드 주문하기</h2>
+    <fieldset>
+        <legend><b>배송 정보</b></legend>
+        <form action="#">
+            <div>
+                <label for="product">주문 상품</label>
+                <input type="text" value="아이패드 12.6 터치" readonly>
+            </div>
+            <div>
+                <label for="name">이름</label>
+                <input type="text" id="name">
+            </div>
+            <div>
+                <label for="address">배송 주소</label>
+                <input type="text" id="address" required>
+            </div>
+            <div>
+                <label for="email">이메일</label>
+                <input type="email" id="email">
+            </div>
+            <div>
+                <label for="phone">연락처</label>
+                <input type="tel" id="phone" placeholder="하이트 빼고 입력해 주세요(01012345678)">
+            </div>
+            <div>
+                <label for="select">배송 지정</label>
+                <input type="date" id="select"><span> (주문일로부터 최소 3일 이후)</span>
+            </div>
+        </form>
+    </fieldset>
+    <form action="#">
+        <div class="button-container">
+            <input type="submit" value="주문하기">
+            <div class="button-spacing"></div>
+            <input type="reset" value="취소하기">
+        </div>
+    </form>
+
+</body>
+</html>
