@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- background color : background-color : <color value> -->
+    <style>
+        /* background-image */
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        .bg {
+            width: 320px;
+            height: 300px;
+            border: 1px solid black;
+            background-image: url("../images/coffee.jpg");
+            background-repeat: no-repeat;
+            /* size 속성 : auto(기본속성), cover, contain*/
+            background-size: cover;
+            background-position: right;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div class="bg"></div>
+</body>
+</html>
