@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+       
+        .container {
+            font-family: "Roboto", cursive;
+            text-align: center;
+            width: 304px;
+            height: 390px;
+            border: 1px solid black;
+            padding: 28px;
+        }
+        button {
+            width: 224px;
+            height: 44px;
+            border: 1px solid #000;
+            text-align: center;
+            margin: 10px auto;
+            background-color: white;
+            font-size: 14px;
+            font-style: bold;
+            color: #504444;
+        }
+        .loginbutton {
+            margin-top: 28px;
+            background-color: #373f3C;
+            font-size: 14px;
+            color: #FFFF;
+        }
+        .login input {
+            height: 44px;
+            width: 228px;
+            margin-top: 20px;
+            background-color: #eaeaea;
+            place-content: right 10px;
+        }
+        .login input::placeholder {
+            padding: 10px;
+            color: #999; 
+        }
+        p {
+            font-size: 16px;
+            font-style: bold;
+            color: #504444;
+        }
+        i {
+            margin-right: 10px;
+        }
+        a {
+            margin: 28px;
+            text-decoration: none;
+            color: #2C3432;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button><i class="fa-brands fa-google"></i>Log in with Google</button>
+        <p>or</p>
+        <div class="login">
+            <input type="text" id="username" placeholder="Username">
+        </div>
+        <div class="login">
+            <input type="text" id="password" placeholder="Password">
+        </div>
+        <button class="loginbutton">Login</button>
+
+        <a href="#">Forgot your password?</a>
+    </div>
+</body>
+</html>
