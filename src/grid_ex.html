@@ -14,28 +14,25 @@
             display: grid;
             gap: 1em;
             grid-template-columns: repeat(auto-fit, 300px);
-            justify-content: center;
         }
         .gallery-item {
+            background-color: white;
+            box-shadow: 1px 1px 5px black;
+            display: flex;
+            flex-direction: column;
             height: 320px;
             padding: 0 24px;
-            box-sizing: border-box;
-            display: flex;
-            box-shadow: 1px 1px 5px black;
-            border: 1px solid black;
-            border-radius: 4px;
-            background-color: white;
         }
         .gallery-image {
             background-size: cover;
             height: 60%;
         }
-        h2 {
+        .gallery-header {
             font-size: 1.5em;
             text-align: center;
             padding: 10px;
         }
-        p {
+        .gallery-sc {
             font-size: 0.8rem;
             padding: 6px 0;
         }
@@ -65,44 +62,44 @@
 <body>
     <div class="gallery-container">
         <div class="gallery-item">
-            <h2>사진 제목</h2>
+            <div class="gallery-header">사진 제목</div>
             <div class="gallery-image image-no1"></div>
-            <p>사진 설명</p>
+            <div class="gallery-sc">사진 설명</div>
         </div>
         <div class="gallery-item">
-            <h2>사진 제목</h2>
+            <div class="gallery-header">사진 제목</div>
             <div class="gallery-image image-no2"></div>
-            <p>사진 설명</p>
+            <div class="gallery-sc">사진 설명</div>
         </div>
         <div class="gallery-item">
-            <h2>사진 제목</h2>
+            <div class="gallery-header">사진 제목</div>
             <div class="gallery-image image-no3"></div>
-            <p>사진 설명</p>
+            <div class="gallery-sc">사진 설명</div>
         </div>
         <div class="gallery-item">
-            <h2>사진 제목</h2>
+            <div class="gallery-header">사진 제목</div>
             <div class="gallery-image image-no4"></div>
-            <p>사진 설명</p>
+            <div class="gallery-sc">사진 설명</div>
         </div>
         <div class="gallery-item">
-            <h2>사진 제목</h2>
+            <div class="gallery-header">사진 제목</div>
             <div class="gallery-image image-no5"></div>
-            <p>사진 설명</p>
+            <div class="gallery-sc">사진 설명</div>
         </div>
         <div class="gallery-item">
-            <h2>사진 제목</h2>
+            <div class="gallery-header">사진 제목</div>
             <div class="gallery-image image-no6"></div>
-            <p>사진 설명</p>
+            <div class="gallery-sc">사진 설명</div>
         </div>
         <div class="gallery-item">
-            <h2>사진 제목</h2>
+            <div class="gallery-header">사진 제목</div>
             <div class="gallery-image image-no7"></div>
-            <p>사진 설명</p>
+            <div class="gallery-sc">사진 설명</div>
         </div>
         <div class="gallery-item">
-            <h2>사진 제목</h2>
+            <div class="gallery-header">사진 제목</div>
             <div class="gallery-image image-no7"></div>
-            <p>사진 설명</p>
+            <div class="gallery-sc">사진 설명</div>
         </div>
     </div>
 </body>
