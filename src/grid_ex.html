@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #eee;
+        }
+        .gallery-container{
+            display: grid;
+            gap: 1em;
+            grid-template-columns: repeat(auto-fit, 300px);
+            justify-content: center;
+        }
+        .gallery-item {
+            height: 320px;
+            padding: 0 24px;
+            box-sizing: border-box;
+            display: flex;
+            box-shadow: 1px 1px 5px black;
+            border: 1px solid black;
+            border-radius: 4px;
+            background-color: white;
+        }
+        .gallery-image {
+            background-size: cover;
+            height: 60%;
+        }
+        h2 {
+            font-size: 1.5em;
+            text-align: center;
+            padding: 10px;
+        }
+        p {
+            font-size: 0.8rem;
+            padding: 6px 0;
+        }
+        .image-no1 {
+            background-image: url(../images/cup-1.jpg);
+        }
+        .image-no2 {
+            background-image: url(../images/cup-2.jpg);
+        }
+        .image-no3 {
+            background-image: url(../images/cup-3.jpg);
+        }
+        .image-no4 {
+            background-image: url(../images/cup-4.jpg);
+        }
+        .image-no5 {
+            background-image: url(../images/cup-5.jpg);
+        }
+        .image-no6 {
+            background-image: url(../images/cup-6.jpg);
+        }
+        .image-no7 {
+            background-image: url(../images/cup-7.jpg);
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <h2>사진 제목</h2>
+            <div class="gallery-image image-no1"></div>
+            <p>사진 설명</p>
+        </div>
+        <div class="gallery-item">
+            <h2>사진 제목</h2>
+            <div class="gallery-image image-no2"></div>
+            <p>사진 설명</p>
+        </div>
+        <div class="gallery-item">
+            <h2>사진 제목</h2>
+            <div class="gallery-image image-no3"></div>
+            <p>사진 설명</p>
+        </div>
+        <div class="gallery-item">
+            <h2>사진 제목</h2>
+            <div class="gallery-image image-no4"></div>
+            <p>사진 설명</p>
+        </div>
+        <div class="gallery-item">
+            <h2>사진 제목</h2>
+            <div class="gallery-image image-no5"></div>
+            <p>사진 설명</p>
+        </div>
+        <div class="gallery-item">
+            <h2>사진 제목</h2>
+            <div class="gallery-image image-no6"></div>
+            <p>사진 설명</p>
+        </div>
+        <div class="gallery-item">
+            <h2>사진 제목</h2>
+            <div class="gallery-image image-no7"></div>
+            <p>사진 설명</p>
+        </div>
+        <div class="gallery-item">
+            <h2>사진 제목</h2>
+            <div class="gallery-image image-no7"></div>
+            <p>사진 설명</p>
+        </div>
+    </div>
+</body>
+</html>
